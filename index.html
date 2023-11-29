@@ -6,18 +6,12 @@
 </div>
 <div id="full">
 <p>Import Successful!</p>
-
-<custom-link src="about.html">
-  <button>About</button>
-</custom-link>
-
-<custom-link src="extra.html">
-  <button>Extra</button>
-</custom-link>
+<iframe id="full-background" src="https://tsparticles.bananaking6.repl.co">No iframes</iframe>
 </div>
 <style>
   body {
     background-color: black;
+    color: white;
   }
   #navigation {
   position: absolute;
@@ -82,6 +76,19 @@
   left: 0;
   bottom: 0;
   z-index: -1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow-x: hidden;
+}
+
+#full-background {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
   padding: 0;
   margin: 0;
   border: none;
