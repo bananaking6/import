@@ -1,37 +1,45 @@
-<nav-bar />
-<page-title name="index"/>
+<nav-bar></nav-bar>
+<page-title name="index" />
 <div id="full">
-<h1 id="main-header">Import Successful!</h1>
-<iframe id="full-background" src="https://845fb82e-cabe-489e-9ff5-03594122778c.id.firewalledreplit.co/">No iframes</iframe>
+  <h1 id="main-header">Import Successful!</h1>
+  <iframe id="full-background" src="https://845fb82e-cabe-489e-9ff5-03594122778c.id.firewalledreplit.co/">No
+    iframes</iframe>
 </div>
 <style>
-#body {
-  background-color: black;
-}
+  #body {
+    background-color: black;
+  }
 
-#full {
+  #full {
     background-color: black;
     color: white;
   }
 
-#full-background {
-  width: 100vw;
-  height: calc(100vh - 60px);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -2;
-  padding: 0;
-  margin: 0;
-  border: none;
-  overflow-x: hidden;
-}
+  #full-background {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+    padding: 0;
+    margin: 0;
+    border: none;
+    overflow-x: hidden;
+  }
 
-#main-header {
-  font-size: 50px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50vh);
-}
+  #main-header {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10vh);
+    transition: all 200ms;
+  }
+
+  #main-header:hover {
+    color: transparent;
+    font-size: 55px;
+    cursor: pointer;
+  }
 </style>
