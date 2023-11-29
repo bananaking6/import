@@ -4,7 +4,7 @@
   <li className="content"><custom-link src="extra.html">News</custom-link></li>
   <li className="content content-r"><custom-link src="about.html">About</custom-link></li>
 </div>
-
+<div id="full">
 <p>Import Successful!</p>
 
 <custom-link src="about.html">
@@ -14,7 +14,7 @@
 <custom-link src="extra.html">
   <button>Extra</button>
 </custom-link>
-
+</div>
 <style>
   body {
     background-color: black;
@@ -35,7 +35,7 @@
   transition: width 0s;
 }
 
-#navigation li:hover a {
+#navigation li:hover custom-link {
   color: gray;
 }
 
@@ -55,7 +55,7 @@
   padding: 10px 16px;
 }
 
-#navigation a {
+#navigation custom-link {
   display: block;
   text-decoration: none;
   color: white;
@@ -72,5 +72,18 @@
 
 #navigation .content {
   padding: 20px 16px;
+}
+
+#full {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow-x: hidden;
 }
 </style>
