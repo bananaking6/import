@@ -1,3 +1,10 @@
+<div id="navigation">
+  <li id="icon-l"><custom-link src="index.html"><img id="icon" src="https://code.bananaking6.repl.co/favicon.svg"></custom-link></li>
+  <li className="content"><custom-link src="extra.html">Info</custom-link></li>
+  <li className="content"><custom-link src="extra.html">News</custom-link></li>
+  <li className="content content-r"><custom-link src="about.html">About</custom-link></li>
+</div>
+
 <p>Import Successful!</p>
 
 <custom-link src="about.html">
@@ -10,6 +17,60 @@
 
 <style>
   body {
-    background-color: blue;
+    background-color: black;
   }
+  #navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 1s;
+  transition: width 0s;
+}
+
+#navigation li:hover a {
+  color: gray;
+}
+
+#navigation * {
+  transition: 1s;
+}
+
+#navigation .content-r {
+  float: right;
+}
+
+#navigation li {
+  float: left;
+  background-color: transparent;
+  margin: 2px;
+  font-size: 20px;
+  padding: 10px 16px;
+}
+
+#navigation a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+#navigation #icon-l img {
+  height: 40px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+#navigation .content {
+  padding: 20px 16px;
+}
 </style>
